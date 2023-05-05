@@ -26,7 +26,7 @@ const server = http.createServer(async (req, res) => {
     // Send the page title as the response
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end(pageTitle);
+    res.end("Helo world");
 //   } finally {
 //     // Quit the browser
 //     await driver.quit();
