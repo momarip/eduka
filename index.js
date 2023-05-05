@@ -23,10 +23,10 @@ const server = http.createServer(async (req, res) => {
 //     await driver.wait(until.titleContains('Selenium WebDriver'), 5000);
 //     let pageTitle = await driver.getTitle();
 
-//     // Send the page title as the response
-//     res.statusCode = 200;
-//     res.setHeader('Content-Type', 'text/plain');
-//     res.end(pageTitle);
+    // Send the page title as the response
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end(pageTitle);
 //   } finally {
 //     // Quit the browser
 //     await driver.quit();
