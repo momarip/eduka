@@ -20,7 +20,7 @@ const server = http.createServer(async (req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     //console.log();
-    res.end(driver);
+    res.end("Hi");
   //} finally {
         // Quit the browser
     //    await driver.quit();
