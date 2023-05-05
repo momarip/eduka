@@ -4,7 +4,7 @@ const chrome = require('selenium-webdriver/chrome');
 const PORT = 3000;
 
 const server = http.createServer(async (req, res) => {
-  // let driver = await new Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless()).build();
+  let driver = await new Builder().forBrowser('chrome').setChromeOptions(new chrome.Options().headless()).build();
   
   //try {
     //  Navigate to Google.com
@@ -20,7 +20,7 @@ const server = http.createServer(async (req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     //console.log();
-    res.end("");
+    res.end(driver);
   //} finally {
         // Quit the browser
     //    await driver.quit();
